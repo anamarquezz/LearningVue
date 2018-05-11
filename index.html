@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="UTF-8">
+    <title>Product App</title>
+    <link rel="styleSheet" type="text/css" href="style.css">
+  </meta>
+
+  <body>
+
+	<div class="nav-bar"></div>
+
+	<div id="app">
+
+		<div class="product">
+
+			<div class="product-image">
+				<img :src="image">
+			</div>
+
+			<div class="product-info">
+				<h1> {{ product }}</h1>
+				<p v-if="inStock">In Stock</p>
+				<p v-else>Out of Stock</p>
+			</div>
+			
+			<div class="url-page">
+				<a :href="anchortag" target="_blank">Visit google.com!</a>
+			</div>
+		</div>
+	</div>
+
+
+    <script src="https://unpkg.com/vue@2.1.4/dist/vue.js"></script>
+    <script src="main.js"></script>
+
+   
+
+  </body>
+</html>
